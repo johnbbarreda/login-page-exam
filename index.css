@@ -1,0 +1,155 @@
+/* General Body Styles */
+body {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)), url('./images/background.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Courier, monospace;
+}
+
+/* Logo Styles */
+.logo {
+    height: 90px;
+    width: auto;
+}
+
+/* Card Styles */
+.card {
+    background-image: url('./images/form-background.jpeg'); 
+    background-size: cover; 
+    background-position: bottom right; 
+    padding: 20px; 
+    min-height: 500px; 
+    margin-top: -100px; 
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: transparent; 
+}
+
+
+.btn {
+    border-radius: 10px; 
+}
+
+/* Form Control Styles */
+#username, #password {
+    background-color: rgb(33, 27, 67);
+    border-style: hidden;
+}
+
+/* Placeholder Color */
+input::placeholder {
+    color: white !important; 
+    opacity: .7 !important;
+    font-size: small;
+}
+
+/* Social Login Button Styles */
+.social-login-container button {
+    width: 60px;
+}
+
+/* Social Icon Styles */
+.social-icon {
+    width: 15px;  
+    height: 15px; 
+    display: block; 
+    margin: auto;
+}
+
+/* Right Arrow Image Styles */
+#right-arrow {
+    max-width: 40px;
+    height: auto;
+    filter: brightness(0) invert(1); 
+    opacity: 0.4;
+}
+
+/* Link Styles */
+a {
+    text-decoration: none; 
+}
+
+/* Submit Button Styles */
+.submit-button {
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 30px; 
+    width: 80px; 
+    height: 80px; 
+}
+
+.submit-button img {
+   max-width: 70%; 
+   height: auto; 
+}
+
+/* Footer Styles */
+footer {
+   position: absolute; 
+   bottom: 0; 
+   left: 0; 
+   width: 100%; 
+   font-size: 10px;
+}
+
+footer .container {
+   justify-content: flex-start; 
+}
+
+footer a {
+   margin-right: 15px; 
+}
+
+#globe{
+   width: 20px; 
+   height: 20px; 
+}
+
+.globe-button{
+   border-radius: hidden;
+   border-color: gray;
+}
+
+/* Policy Link Styles */
+#policy a{
+   color: white; 
+   text-decoration: underline;
+}
+
+/* Form Check Styles */
+.form-check {
+   margin-top: 10px; 
+}
+
+.form-check-input {
+   background-color: rgba(255, 255, 255, .6);
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 576px) { 
+   body {
+       background-position: left center; 
+   }
+}
+
+@media (min-width: 577px) and (max-width: 992px) { 
+   body {
+       background-position: center; 
+   }
+}
+
+@media (max-width: 576px) {
+   .logo-container {
+       text-align: center; 
+       margin-bottom: 20px; 
+   }
+
+   .card {
+       width: 90%; 
+       margin-left: auto;
+       margin-right:auto;
+       min-height:auto;
+   }
+}
